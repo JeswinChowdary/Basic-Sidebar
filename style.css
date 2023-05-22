@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(10, 8, 8);
+}
+#sidebar {
+    width: 100px;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.icon {
+    width: 50%;
+    background: white;
+    transition: 300ms ease-in-out
+}
+.icon:hover {
+    background: rgb(60, 124, 60);
+}
+#close-sidebar {
+    width: 20%;
+    background: white;
+    transition: 100ms ease-out;
+}
+#close-sidebar:hover {
+    background: red;
+}
+#sidebar a {
+    display: flex;
+    justify-content: center;
+}
+#open-sidebar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    z-index: -1;
+}
